@@ -1,9 +1,13 @@
 package com.github.ozgurkardesler.keepitsecret;
 
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
-import static com.github.ozgurkardesler.keepitsecret.other.Reference.*;
+import net.neoforged.fml.config.ModConfig;
 
-// The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(MOD_ID)
+@Mod("keepitsecret")
 public class KeepItSecret {
+    public KeepItSecret(IEventBus modEventBus, ModContainer modContainer) {
+        modContainer.registerConfig(ModConfig.Type.CLIENT, Config.SPEC);
+    }
 }

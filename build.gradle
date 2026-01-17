@@ -27,6 +27,8 @@ neoForge {
         minecraftVersion = project.parchment_minecraft_version
     }
 
+    addModdingDependenciesTo(sourceSets.main)
+
     // This line is optional. Access Transformers are automatically detected
     // accessTransformers.add('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -164,4 +166,7 @@ idea {
         downloadSources = true
         downloadJavadoc = true
     }
+}
+tasks.named('processResources') {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
