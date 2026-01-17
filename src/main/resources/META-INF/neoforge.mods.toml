@@ -1,0 +1,18 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+
+[[mods]]
+modId="keepitsecret"
+version="1.0.0"
+displayName="KeepItSecret"
+description="Keep it secret and have your nameplates get obscured by blocks!"
+
+
+[[dependencies.keepitsecret]]
+modId="neoforge"
+type="required"
+versionRange="[21.10,)"
+ordering="NONE"
+side="CLIENT"
