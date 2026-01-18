@@ -21,4 +21,7 @@ public class KeepItSecretGameRules {
                     GameRules.Category.MOBS,
                     GameRules.BooleanValue.create(true)
             );
+
+    public static void init(){
+    }
 }
